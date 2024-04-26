@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina oficial Rayo Makween</title>
+        <!-- Enlaces de Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Color de la navbar -->
+        <style>
+            .navbar {
+                background-color: rgb(0, 0, 0) !important;
+                color: white !important;
+            }
+            .navbar-brand{
+                font-family: 'Arial';
+            }
+            body{
+                background-color: #333;
+                color: rgb(200, 227, 251);
+                padding: 15px;
+            }
+            .footer{
+                background-color: rgb(0, 0, 0);
+                color: rgb(200, 227, 251);
+                text-align: center;
+                padding: 20px;
+            }
+            .navbar-nav .nav-link{
+                transition: transform 0.5s ease;
+            }
+            .navbar-nav .nav-link:hover{
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Login.html">
+                            <img src="https://i.pinimg.com/originals/37/f3/54/37f354f12c3970a7b205824213e09bf8.png" alt="Login" style="height: 45px;">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Main.html">
+                            <img src="https://i.pinimg.com/736x/43/67/90/436790cc01143ffb1f728f41a1bb7b41.jpg" alt="Inicio" style="height: 40px;">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Servicios.html">
+                            <img src="https://us.123rf.com/450wm/sabuhinovruzov/sabuhinovruzov1802/sabuhinovruzov180200060/94613574-contrato-de-servicio-automático-icono-aislado-sobre-fondo-negro-servicio-automático-reparación-de.jpg" alt="Nosotros" style="height: 40px;">
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Contacto.html">
+                            <img src="https://png.pngtree.com/png-vector/20220818/ourlarge/pngtree-rounded-vector-icon-in-flat-white-color-for-call-center-vector-png-image_19579226.jpg" alt="Contacto" style="height: 40px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Barra de busqueda -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <div class="d-flex justify-content-start flex-grow-1">
+                <!-- Logo de la pagina + nombre de la empresa-->
+                <a class="navbar-brand ml-auto">
+                <img src="https://img.freepik.com/vector-premium/logotipo-mecanico_183875-451.jpg?w=996" alt="Logotipo" style="height:40px;">
+                <span>Rayo Makween</span>
+            </a>
+            </div>
+        </nav>
+        <!-- Carrusel de fotos -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://www.rutamotor.com/wp-content/uploads/2019/05/Test-drive-Chevrolet-Silverado-Trail-Boss-Rutamotor-33.jpg" alt="Primera imagen" style="height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg" alt="Segunda imagen" style="height:500px;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.topgear.es/sites/navi.axelspringer.es/public/media/image/2017/09/chevrolet-camaro-zl1-1le-iii.jpg?tf=3840x" alt="Tercera imagen" style="height: 500px;">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <!-- Contenido -->
+        <h1>BIENVENIDOS!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>
+                        Aqui podras encontrar nuestros diferentes servicios, tales como:
+
+                        Servicios de Reparación:
+
+                        Reparación Mecánica
+                        Reparación de Estética
+                        Reparación de Pintura
+
+                        Nuestro Equipo Especializado:
+                        
+                        Mecánicos Certificados
+                        Especialistas en Estética Automotriz
+                        Técnicos de Pintura
+                        ¡Confía en nosotros para cuidar de tu vehículo!
+                    </p>
+                </div>
+                <div class="col-md-6" >
+                    <img src="https://norisk.mx/wp-content/uploads/2020/08/mecánico-de-automóviles.jpg" alt="Imagen descriptiva" class="img-fluid" style="height: 500px;">
+                </div>
+            </div>
+        </div>
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    ¡Mantén tu vehículo en óptimas condiciones con nosotros!
+                    En Rayo Makween, nos especializamos en brindar soluciones 
+                    integrales para mantener tu vehículo en su mejor estado, tanto mecánica como estéticamente. 
+                    Con años de experiencia en el sector automotriz, nuestro equipo de expertos se compromete a ofrecerte servicios de primera calidad y atención personalizada 
+                    para satisfacer todas tus necesidades.
+                </span>
+                <span class="text-muted">
+                    Nuestros Servicios:
+                    Reparaciones Mecánicas: Desde problemas de motor hasta mantenimiento regular, estamos aquí para asegurarnos de que tu automóvil funcione sin problemas en todo momento.
+                    Reparaciones Estéticas: ¿Buscas darle a tu vehículo una apariencia fresca y renovada? Ofrecemos una amplia gama de servicios estéticos, desde detallado hasta pintura y restauración de carrocería.
+                    
+                    Contacto:
+                    ¿Listo para programar una cita o tienes alguna pregunta? ¡No dudes en ponerte en contacto con nosotros!
+                    Dirección: Mi casita #123
+                    Teléfono: +5691234567
+                    Email: Rayomackeen@gmail.com
+                    © 2024 Rayo Makween. Todos los derechos reservados.
+                </span>
+            </div>
+        </footer>
+        <!-- Scripts de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

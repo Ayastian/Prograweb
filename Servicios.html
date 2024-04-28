@@ -16,9 +16,16 @@
                 font-family: 'Arial';
             }
             body{
-                background-color: #333;
+                background: linear-gradient(270deg, #585555, #000);
+                background-size: 200% 100%;
+                animation: Gradient 10s linear infinite;
                 color: rgb(200, 227, 251);
                 padding: 15px;
+            }
+            @keyframes Gradient {
+                0% {background-position: 0% 50%;}
+                50% {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
             }
             .footer{
                 background-color: rgb(0, 0, 0);
@@ -63,6 +70,23 @@
                 background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el label */
                 color: white;
                 padding: 10px;
+            }
+            .card {
+                background: #000;
+                box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+                transition: 0.3s;
+                border-radius: 10px;
+                height: 95%;
+                padding: 20px;
+                margin: 20px;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .card-body .btn {
+                margin-top: auto;
             }
         </style>
     </head>
@@ -113,14 +137,25 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 carrusel-imagen" src="https://www.repuestosacquaroni.com/wp-content/uploads/2018/10/mecanico-arreglando-auto.jpg" alt="Primera imagen" style="height: 500px;">
+                    <img class="d-block w-100 carrusel-imagen" src="https://totalenergies.mx/system/files/atoms/image/imagen-motor-aceitee.png" alt="Primera imagen" height="540" width="960">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cambio de aceite</h5>
+                        <p>El cambio de aceite en autos implica reemplazar el aceite usado por aceite nuevo para proteger y lubricar el motor, manteniendo su rendimiento y durabilidad.</p>
+                      </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 carrusel-imagen" src="https://www.motor.mapfre.es/media/2018/08/MOTOR-LIBRO-MANTENIMIENTO.jpg" alt="Segunda imagen" style="height:500px;">
-                    <div class="labels">Visitanos Ya!</div>
+                    <img class="d-block w-100 carrusel-imagen" src="https://www.lacasadelneumatico.com/blog/wp-content/uploads/2023/11/como-rotar-los-neumaticos-de-coche.jpg" alt="Segunda imagen" height="540" width="960">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rotación de neumaticos</h5>
+                        <p>La rotación de neumáticos implica cambiar la posición de los neumáticos del vehículo para asegurar un desgaste uniforme, prolongando su vida útil y manteniendo un manejo seguro.</p>
+                      </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100 carrusel-imagen" src="https://www.clubdelpintoraxalta.com/wp-content/uploads/2022/12/cuanto-tiempo-se-tarda-en-pintar-un-carro-p-min.jpg" alt="Tercera imagen" style="height: 500px;">
+                    <img class="d-block w-100 carrusel-imagen" src="https://amsatiendaenlinea.com.mx/cdn/shop/articles/Balatas_de_Frenos_ABS.jpg?v=1662051747" alt="Tercera imagen" height="540" width="960">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cambio de frenos</h5>
+                        <p> El cambio de frenos involucra la inspección y si es necesario, el reemplazo de pastillas y discos de freno, junto con el mantenimiento del fluido de frenos.</p>
+                      </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -136,43 +171,65 @@
         <div class="container">
             <div class="card-deck">
                 <div class="col-md-4">
-                    <div class="card" style="background-color: #111111; color: white;">
-                        <img class="card-img-top" src="https://totalenergies.mx/system/files/atoms/image/imagen-motor-aceitee.png" alt="Product 1">
+                    <div class="card card-body" style="background-color: #111111; color: white;">
+                        <h5 class="card-title d-flex justify-content-center">Cambio de Aceite</h5>
+                        <img class="card-img-top" src="https://totalenergies.mx/system/files/atoms/image/imagen-motor-aceitee.png" alt="Product 1" height="200px">
                         <div class="card-body">
-                            <h5 class="card-title">Cambio de Aceite</h5>
                             <p class="card-text">
                                 Cambiar el aceite del auto implica quitar el aceite viejo y poner aceite nuevo para proteger y lubricar el motor, evitando daños y manteniendo su funcionamiento óptimo según las recomendaciones del fabricante.</p>
-                            <a href="cambioaceite.html" class="btn btn-primary">Cotizar</a>
+                            <a href="cambioaceite.html" class="btn btn-primary d-flex justify-content-center">Cotizar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" style="background-color: #111111; color: white;">
-                        <img class="card-img-top" src="https://www.lacasadelneumatico.com/blog/wp-content/uploads/2023/11/como-rotar-los-neumaticos-de-coche.jpg" alt="Product 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Rotacion de neumaticos</h5>
+                    <div class="card card-body" style="background-color: #111111; color: white;">
+                        <h5 class="card-title d-flex justify-content-center">Rotacion de neumaticos</h5>
+                        <img class="card-img-top" src="https://www.lacasadelneumatico.com/blog/wp-content/uploads/2023/11/como-rotar-los-neumaticos-de-coche.jpg" alt="Product 2" height="200px">
+                        <div class="card-body">                           
                             <p class="card-text">
                                 La rotación de neumáticos implica cambiar la posición de los neumáticos del vehículo para asegurar un desgaste uniforme, promoviendo así una mayor durabilidad y seguridad en la conducción, siguiendo las pautas del fabricante para mantener el rendimiento del vehículo.</p>
-                            <a href="#" class="btn btn-primary">Cotizar</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-center">Cotizar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" style="background-color: #111111; color: white;">
-                        <img class="card-img-top" src="https://amsatiendaenlinea.com.mx/cdn/shop/articles/Balatas_de_Frenos_ABS.jpg?v=1662051747"" alt="Product 3">
+                    <div class="card card-body" style="background-color: #111111; color: white;">
+                        <h5 class="card-title d-flex justify-content-center">Cambio de frenos</h5>
+                        <img class="card-img-top" src="https://amsatiendaenlinea.com.mx/cdn/shop/articles/Balatas_de_Frenos_ABS.jpg?v=1662051747"" alt="Product 3" height="200px">
                         <div class="card-body">
-                            <h5 class="card-title">Cambio de frenos</h5>
                             <p class="card-text">
                                 El cambio de frenos consiste en inspeccionar y, si es necesario, reemplazar las pastillas de freno y los discos para garantizar un rendimiento óptimo del sistema de frenado, lo que es esencial para la seguridad y el funcionamiento adecuado del vehículo, siguiendo las indicaciones del fabricante para mantener la eficacia de frenado.</p>
-                            <a href="#" class="btn btn-primary">Cotizar</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-center">Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    ¡Mantén tu vehículo en óptimas condiciones con nosotros!
+                    En Rayo Makween, nos especializamos en brindar soluciones 
+                    integrales para mantener tu vehículo en su mejor estado, tanto mecánica como estéticamente. 
+                    Con años de experiencia en el sector automotriz, nuestro equipo de expertos se compromete a ofrecerte servicios de primera calidad y atención personalizada 
+                    para satisfacer todas tus necesidades.
+                </span>
+                <span class="text-muted">
+                    Nuestros Servicios:
+                    Reparaciones Mecánicas: Desde problemas de motor hasta mantenimiento regular, estamos aquí para asegurarnos de que tu automóvil funcione sin problemas en todo momento.
+                    Reparaciones Estéticas: ¿Buscas darle a tu vehículo una apariencia fresca y renovada? Ofrecemos una amplia gama de servicios estéticos, desde detallado hasta pintura y restauración de carrocería.
+                    
+                    Contacto:
+                    ¿Listo para programar una cita o tienes alguna pregunta? ¡No dudes en ponerte en contacto con nosotros!
+                    Dirección: Mi casita #123
+                    Teléfono: +5691234567
+                    Email: Rayomackeen@gmail.com
+                    © 2024 Rayo Makween. Todos los derechos reservados.
+                </span>
+            </div>
+        </footer>
         <!-- Scripts de Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
